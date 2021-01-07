@@ -409,7 +409,7 @@ function initCardImageGenerator() {
             context.fillStyle = "black";
         }
 
-        function writeIllustrationCredit(x, y, color, bold, size = 42) {
+        function writeIllustrationCredit(x, y, color, bold, size = 48) {
             console.log(x);
             var illustrationCredit = document.getElementById("credit").value;
             if (illustrationCredit) {
