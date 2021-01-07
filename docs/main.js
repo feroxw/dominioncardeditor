@@ -409,7 +409,7 @@ function initCardImageGenerator() {
             context.fillStyle = "black";
         }
 
-        function writeIllustrationCredit(x, y, color, bold, size = 31) {
+        function writeIllustrationCredit(x, y, color, bold, size = 33) {
             var illustrationCredit = document.getElementById("credit").value;
             if (illustrationCredit) {
                 context.font = bold + size + "pt Times New Roman";
@@ -419,7 +419,7 @@ function initCardImageGenerator() {
             }
         }
 
-        function writeCreatorCredit(x, y, color, bold, size = 33) {
+        function writeCreatorCredit(x, y, color, bold, size = 31) {
             var creatorCredit = document.getElementById("creator").value;
             if (creatorCredit) {
                 context.textAlign = "right";
