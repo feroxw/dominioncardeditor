@@ -415,18 +415,18 @@ function initCardImageGenerator() {
             if (illustrationCredit) {
                 context.font = bold + size + "pt Times New Roman";
                 context.fillStyle = color;
-                context.fillText(illustrationCredit, x, y-8);
+                context.fillText(illustrationCredit, x+4, y-5);
                 context.fillStyle = "#000";
             }
         }
 
-        function writeCreatorCredit(x, y, color, bold, size = 31) {
+        function writeCreatorCredit(x, y, color, bold, size = 36) {
             var creatorCredit = document.getElementById("creator").value;
             if (creatorCredit) {
                 context.textAlign = "right";
                 context.font = bold + size + "pt Times New Roman";
                 context.fillStyle = color;
-                context.fillText(creatorCredit, x, y-2);
+                context.fillText(creatorCredit, x, y-3);
                 context.fillStyle = "#000";
             }
         }
