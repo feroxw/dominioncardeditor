@@ -409,13 +409,13 @@ function initCardImageGenerator() {
             context.fillStyle = "black";
         }
 
-        function writeIllustrationCredit(x, y, color, bold, size = 33) {
+        function writeIllustrationCredit(x, y, color, bold, size = 42) {
             console.log(x);
             var illustrationCredit = document.getElementById("credit").value;
             if (illustrationCredit) {
                 context.font = bold + size + "pt Times New Roman";
                 context.fillStyle = color;
-                context.fillText(illustrationCredit, x, y-2);
+                context.fillText(illustrationCredit, x, y-8);
                 context.fillStyle = "#000";
             }
         }
