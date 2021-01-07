@@ -410,22 +410,23 @@ function initCardImageGenerator() {
         }
 
         function writeIllustrationCredit(x, y, color, bold, size = 33) {
+            console.log(x);
             var illustrationCredit = document.getElementById("credit").value;
             if (illustrationCredit) {
                 context.font = bold + size + "pt Times New Roman";
                 context.fillStyle = color;
-                context.fillText(illustrationCredit, x, y);
+                context.fillText(illustrationCredit, x, y-2);
                 context.fillStyle = "#000";
             }
         }
 
-        function writeCreatorCredit(x, y, color, bold, size = 31) {
+        function writeCreatorCredit(x, y, color, bold, size = 33) {
             var creatorCredit = document.getElementById("creator").value;
             if (creatorCredit) {
                 context.textAlign = "right";
                 context.font = bold + size + "pt Times New Roman";
                 context.fillStyle = color;
-                context.fillText(creatorCredit, x, y);
+                context.fillText(creatorCredit, x, y-2);
                 context.fillStyle = "#000";
             }
         }
