@@ -415,7 +415,7 @@ function initCardImageGenerator() {
             if (illustrationCredit) {
                 context.font = bold + size + "pt Times New Roman";
                 context.fillStyle = color;
-                context.fillText(illustrationCredit, x+4, y-5);
+                context.fillText(illustrationCredit, x+8, y);
                 context.fillStyle = "#000";
             }
         }
