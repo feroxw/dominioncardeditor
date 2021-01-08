@@ -1110,7 +1110,7 @@ function initCardImageGenerator() {
         window.location.href = this.href + document.location.search;
     }, false);
 
-    document.getElementById('carddatareadout').value = "cards[751] = {cardName: ";
+    document.getElementById('carddatareadout').value = "cards[751] = {cardName: \"" + document.getElementById("title").value.trim() + "\", setName: \"" ;
 }
 
 function getQueryParams(qs) { //http://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
