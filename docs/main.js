@@ -1123,7 +1123,7 @@ function initCardImageGenerator() {
     let cost = parseInt(document.getElementById('price').value.replace('$',''));
     let types = document.getElementById('type').value.split('-');
     for (var i = 0; i < types.length; i++) {
-        types[i] = "'" + types[i] + "'";
+        types[i] = "'" + types[i].trim() + "'";
     }
     document.getElementById('carddatareadout').value = "cards[] = {cardName: \"" + document.getElementById("title").value.trim() + "\", setName: \"" + setName + "\", cardURL: \"\", cost: " + cost + ", types: [" + types.join(',') + "];";
 }
@@ -1309,4 +1309,9 @@ function Favorites(name) {
             favList.appendChild(li);
         });
     };
+}
+
+function copyCardDataReadout(){
+    document.getElementById('carddatareadout').select();
+    document.execCommand('copy');
 }
