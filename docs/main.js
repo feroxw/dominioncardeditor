@@ -1120,7 +1120,9 @@ function initCardImageGenerator() {
     if(document.getElementById("creator").value.trim() == 'MAZEECAT'){
         setName = 'Custom/Stephen';
     }
-    document.getElementById('carddatareadout').value = "cards[] = {cardName: \"" + document.getElementById("title").value.trim() + "\", setName: \"" + setName + "\", cardURL: \"\", cost: " + parseInt(document.getElementById('price').value) ;
+    let cost = parseInt(document.getElementById('price').value.replace('$',''));
+    let types = document.getElementById('type').value.split('-').join(',');
+    document.getElementById('carddatareadout').value = "cards[] = {cardName: \"" + document.getElementById("title").value.trim() + "\", setName: \"" + setName + "\", cardURL: \"\", cost: " + cost + ", types: [" + types + "]";
 }
 
 function getQueryParams(qs) { //http://stackoverflow.com/questions/979975/how-to-get-the-value-from-the-get-parameters
