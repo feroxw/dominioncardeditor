@@ -858,6 +858,7 @@ function initCardImageGenerator() {
         } else {
             img.src = url;
         }
+        img.src = url;
         img.onload = () => {
             let context = canvas.getContext('2d');
             if (maxWidth > 0 && maxHeight > 0) {
