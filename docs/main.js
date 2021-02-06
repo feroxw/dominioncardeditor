@@ -1098,7 +1098,7 @@ function initCardImageGenerator() {
     function adjustPageTitle() {
         let cardTitle = document.getElementById("title").value.trim();
         let creator = document.getElementById("creator").value.trim();
-        let pageDefaultTitle = "Dominion Card Image Generator";
+        let pageDefaultTitle = "Dominion Card Editor";
         document.title = cardTitle.length > 0 ? (pageDefaultTitle + " - " + cardTitle + " " + creator) : pageDefaultTitle;
     };
     document.getElementById('title').addEventListener('change', adjustPageTitle, false);
