@@ -67,21 +67,14 @@
 @font-face {
     font-family: 'TrajanPro';
     font-display: auto;
-    src: local("Trajan Pro Bold") format('truetype'), local("TrajanPro-Bold"),
-        
-        local("Trajan Pro"),
-        local("Trajan"),
-        local("Optimus Princeps"),
-        url(https://fonts.gstatic.com/s/cinzel/v8/8vIJ7ww63mVu7gt79mT7PkRXMw.woff2) format('woff2'),
+    src: local("Trajan Pro Bold") format('truetype'),
         local("Times New Roman");
 }
 
 @font-face {
     font-family: 'Minion';
     font-display: auto;
-    src: local("Minion Std Black") format('truetype'), local("MinionStd-Black"),
-        local("Optimus Princeps"),
-        url(https://fonts.gstatic.com/s/cinzel/v8/8vIJ7ww63mVu7gt79mT7PkRXMw.woff2) format('woff2'),
+    src: local("Minion Std Black") format('truetype'),
         local("Times New Roman");
 }
 
