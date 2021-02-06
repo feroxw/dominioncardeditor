@@ -67,15 +67,13 @@
 @font-face {
     font-family: 'TrajanPro';
     font-display: auto;
-    src: local("Trajan Pro Bold.ttf") format('truetype'),
-        local("Times New Roman");
+    src: url("Trajan Pro Bold.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Minion';
     font-display: auto;
-    src: local("Minion Std Black.ttf") format('truetype'),
-        local("Times New Roman");
+    src: url("Minion Std Black.ttf") format('truetype');
 }
 
 html,
